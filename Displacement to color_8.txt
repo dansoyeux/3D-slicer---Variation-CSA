@@ -1,0 +1,7 @@
+# Color procedural file C:/Users/Dan/Documents/Gitkraken/EpauleFDK/Application/Validation/EpauleFDK/CSA Variation - 3D slicer/Displacement to color_8.txt
+# 4 points
+# position R G B
+1 0.2 0.2 0.2
+2 0 1 0
+5 1 1 0
+10 1 0 0
