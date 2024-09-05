@@ -243,8 +243,9 @@ def ExportCSA():
 
     ghPosition = np.round(ghPosition, 6)
 
-    inclination_angle = round(get_angle_between_axes("Scapula - Axe transverse", "Glene - Up/Down Axis", "Inclination") - 90, 3)
-    version_angle = round(get_angle_between_axes("Scapula - Axe transverse", "Glene - Left/Right Axis", "Inclination") - 90, 3)
+    # Version and inclination angle
+    inclination_angle = round(get_angle_between_axes("Scapula - Axe transverse", "Glene - Up/Down Axis") - 90, 3)
+    version_angle = round(get_angle_between_axes("Scapula - Axe transverse", "Glene - Left/Right Axis") - 90, 3)
 
     RotationAxisName = f'AnyString RotationAxis = "{GlenRotationAxisName}";'
     Inclination = f"AnyVar GleneImplantTiltAngle = {inclination_angle};"
