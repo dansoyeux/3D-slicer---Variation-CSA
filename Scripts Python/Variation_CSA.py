@@ -92,16 +92,16 @@ def CSA():
     Function that calculates and prints the CSA
 
     The function uses the position of three points :
-        Scapula End : most lateral point of the acromion
+        Acromion End : most lateral point of the acromion
         Glene Down : most inferior point of the glenoid implant articular surface
         Glene Up : most superior point of the glenoid implant articular surface
 
     The CSA is the angle between two lines (projected on the frontal plane of the scapula):
-        line 1 : Scapula End - Glene Down
+        line 1 : Acromion End - Glene Down
         line 2 : Glene Down - Glene Up
     """
 
-    ScapulaEnd = slicer.util.getNode("Scapula End")
+    ScapulaEnd = slicer.util.getNode("Acromion End")
 
     GleneDown = slicer.util.getNode("Glene Down")
     GleneUp = slicer.util.getNode("Glene Up")

@@ -2,7 +2,7 @@
     "@schema": "https://raw.githubusercontent.com/slicer/slicer/master/Modules/Loadable/Markups/Resources/Schema/markups-schema-v1.0.3.json#",
     "markups": [
         {
-            "type": "Line",
+            "type": "Fiducial",
             "coordinateSystem": "LPS",
             "coordinateUnits": "mm",
             "locked": false,
@@ -12,22 +12,10 @@
             "controlPoints": [
                 {
                     "id": "1",
-                    "label": "L-1",
+                    "label": "Acromion end",
                     "description": "",
                     "associatedNodeID": "",
-                    "position": [13.89674, -0.0, 28.419],
-                    "orientation": [-1.0, -0.0, -0.0, -0.0, -1.0, -0.0, 0.0, 0.0, 1.0],
-                    "selected": true,
-                    "locked": true,
-                    "visibility": true,
-                    "positionStatus": "defined"
-                },
-                {
-                    "id": "2",
-                    "label": "L-2",
-                    "description": "",
-                    "associatedNodeID": "",
-                    "position": [-13.897, -0.0, 28.419],
+                    "position": [-41.08389663696289, 8.434078216552734, -39.317665100097656],
                     "orientation": [-1.0, -0.0, -0.0, -0.0, -1.0, -0.0, 0.0, 0.0, 1.0],
                     "selected": true,
                     "locked": true,
@@ -35,24 +23,16 @@
                     "positionStatus": "defined"
                 }
             ],
-            "measurements": [
-                {
-                    "name": "length",
-                    "enabled": false,
-                    "value": 27.793734850014054,
-                    "units": "mm",
-                    "printFormat": "%-#4.4gmm"
-                }
-            ],
+            "measurements": [],
             "display": {
                 "visibility": true,
                 "opacity": 1.0,
                 "color": [0.4, 1.0, 1.0],
-                "selectedColor": [1.0, 0.3333333333333333, 1.0],
+                "selectedColor": [0.3333333333333333, 0.3333333333333333, 1.0],
                 "activeColor": [0.4, 1.0, 0.0],
-                "propertiesLabelVisibility": true,
-                "pointLabelsVisibility": false,
-                "textScale": 3.0,
+                "propertiesLabelVisibility": false,
+                "pointLabelsVisibility": true,
+                "textScale": 3.7,
                 "glyphType": "Sphere3D",
                 "glyphScale": 3.0,
                 "glyphSize": 5.0,
