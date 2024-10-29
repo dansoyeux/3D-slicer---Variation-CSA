@@ -248,7 +248,7 @@ def ExportCSA():
     version_angle = round(get_angle_between_axes("Scapula - Axe transverse", "Glene - Left/Right Axis") - 90, 3)
 
     RotationAxisName = f'AnyString RotationAxis = "{GlenRotationAxisName}";'
-    Inclination = f"AnyVar GleneImplantTiltAngle = {inclination_angle};"
+    Inclination = f"AnyVar GleneImplantInclinationAngle = {inclination_angle};"
     Version = f"AnyVar GleneImplantVersionAngle = {version_angle};"
     Translation = f'AnyVec3 Position = 0.001*{{{Matrix[0,3]} , {Matrix[1,3]} , {Matrix[2,3]}}};'
     Rotation = f'AnyMat33 Rotation = {{\n{{{Matrix[0,0]} , {Matrix[0,1]} , {Matrix[0,2]}}},\n{{{Matrix[1,0]} , {Matrix[1,1]} , {Matrix[1,2]}}},\n{{{Matrix[2,0]} , {Matrix[2,1]} , {Matrix[2,2]}}}\n\n}};'
